@@ -1,8 +1,8 @@
 /* 
  * File:   main.cpp
  * Author: Andrew Pena
- * Created on August 29th, 2017, 12:00 PM
- * Purpose: CPP Template  
+ * Created on September 15, 2017, 12:00 PM
+ * Purpose: Binary Search of Strings 
  */
 
 //System Libraries
@@ -53,11 +53,13 @@ int main(int argc, char** argv) {
     
     cout<<Srch<<endl;
     
-    if (Srch==-1){
-        cout<<"Name is not Found"<<endl;    
+    if (Srch>=0){
+        cout<<"Name is Found"<<endl;    
     }
-    else cout<<"Name is Found"<<endl;
+    else cout<<"Name is not Found"<<endl;
 
+    cout<<"Can't Find out how to Use Binary Search for this Program"<<endl;
+    
     //Exit stage right!
     return 0;
 }
@@ -81,21 +83,20 @@ void sortArry(string arry[], int size){
 }
 
 int BnrySrch(string names[], int size, string value){
-    int first=0,
-            last=size-1,
-            middle,
-            position = -1;
-    bool found=false;
-    while(!found&&first<=last){
-        middle=(first+last)/2;
-        if(names[middle]==value){
-            found=true;
-            position=middle;
+    int low=0,
+        high=size-1,
+        mid;
+
+    while(low<=high){
+        mid=(low+high)/2;
+        if(value==names[mid]){
+            return mid;
         }
-        else if(names[middle]>value)
-            last=middle-1;
+        else if(value>names[mid])
+            low=mid+1;
         else
-            first=middle+1;
+            high=mid-1;
     }
-    return position;
+    return -1;
 }
+    
