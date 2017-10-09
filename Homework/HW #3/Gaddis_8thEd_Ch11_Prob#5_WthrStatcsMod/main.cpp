@@ -9,6 +9,9 @@
 #include <iostream> //Input - Output Library
 
 using namespace std; //Name-space under which system libraries exist
+enum Mnth {January, Feburary, March, April,
+            May, June, July, August,
+            September, October, November, December};
 
 //User Libraries
 # include "WthrStatcs.h"
@@ -27,13 +30,12 @@ int main(int argc, char** argv) {
           lTmp=0, //Lowest Temperature
           max=-100,  //Max Temp
           min=140; //Min Temp
-    int size=12,    //Months Used
-        hMnth=0,  //Counter for Month Highest
+    int hMnth=0,  //Counter for Month Highest
         lMnth=0;  //Counter for Month Lowest
-    wthrData *a=new wthrData[size]; //Allocated Array
+    wthrData *a=new wthrData[12]; //Allocated Array
     
     //Total Rainfall
-    for(int i=0;i<size;i++){
+    for(int i=January;i<December;i++){
         do{
         cout<<"Month "<<i+1<<". Total Rainfall(Inches) :";
         cin>>a[i].rinfll;
