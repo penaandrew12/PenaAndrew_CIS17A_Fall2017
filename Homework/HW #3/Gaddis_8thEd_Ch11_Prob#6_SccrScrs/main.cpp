@@ -27,7 +27,7 @@ int main(int argc, char** argv) {
         topNum=0;   //Top Player Team Number
     string topFNme, //Top Player First Name 
            topLNme; //Top Player Last Name
-    const int size=3;  //Amount of Soccer Players
+    int size=3;  //Amount of Soccer Players
             
     ScrPlys *a=new ScrPlys[size]; //Allocated Array
 
@@ -68,8 +68,13 @@ int main(int argc, char** argv) {
     cout<<setw(5)<<"Soccer Team Cheat Sheet"<<endl;
     cout<<"--------------------------------------"<<endl;
     cout<<"Player # / Points Scored / First Name / Last Name"<<endl;
+    for(int i=0;i<size;i++){
+        cout<<a[i].plrNum<<setw(9)<<" "<<a[i].scrPnts<<setw(16)<<" "<<a[i].frstNme<<" "<<a[i].lstNme<<endl;
+    }
     
+    //Info
     cout<<endl<<"If two or more Players earned the same amount of most Points."<<endl;
+    cout<<"The First One that is Inputed will come up."<<endl;
     cout<<"Total Points earned by the team is "<<ttl<<" Points."<<endl;
     cout<<topFNme<<" "<<topLNme<<" Number "<<topNum<<" Earned the most "
             "Points with a total of "<<topPnts<<endl;

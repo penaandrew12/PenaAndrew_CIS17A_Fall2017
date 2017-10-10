@@ -2,16 +2,13 @@
  * File:   main.cpp
  * Author: Andrew Pena
  * Created on October 2nd, 2017, 1:40 PM
- * Purpose: Weather Data Statistics
+ * Purpose: Weather Data Statistics with Modification
  */
 
 //System Libraries
 #include <iostream> //Input - Output Library
 
 using namespace std; //Name-space under which system libraries exist
-enum Mnth {January, Feburary, March, April,
-            May, June, July, August,
-            September, October, November, December};
 
 //User Libraries
 # include "WthrStatcs.h"
@@ -23,6 +20,9 @@ enum Mnth {January, Feburary, March, April,
 // Execution begins here!
 int main(int argc, char** argv) {
     //Declare Variables
+    enum Mnth {January, Feburary, March, April,
+            May, June, July, August,
+            September, October, November, December};    //Months as Enumerated Data Types
     float ttl=0,    //Total Rainfall
           aMR=0,  //Average Monthly Rainfall
           aMT=0,  //Average Monthly Temperature

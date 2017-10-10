@@ -8,6 +8,10 @@
 #ifndef CSTMRINFO_H
 #define CSTMRINFO_H
 
+#include <iostream> //Input - Output Library
+#include <string> //String Library
+using namespace std; //Name-space under which system libraries exist
+
 struct info{
     string name;    //Name of Person
     string addrsNme;    //Address Name

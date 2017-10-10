@@ -1,8 +1,8 @@
 /* 
  * File:   main.cpp
  * Author: Andrew Pena
- * Created on August 29th, 2017, 12:00 PM
- * Purpose: Customer Account Information 
+ * Created on October 9th, 2017, 12:00 PM
+ * Purpose: Customer Account Information and Corrections
  */
 
 //System Libraries
@@ -21,9 +21,11 @@ using namespace std; //Name-space under which system libraries exist
 // Execution begins here!
 int main(int argc, char** argv){
     //Declare Variables
-    int size=0;
-    char choice;
-    
+    int size=0, //Size of Array
+        fix=0;  //Fix if needed of Array Structure
+    char choice, //Input from user
+         ans;   //Answer from user
+            
     //Size of Array
     cout<<"Enter the amount of Costumers you wish to have on the account list : ";
     cin>>size;
@@ -42,6 +44,7 @@ int main(int argc, char** argv){
         
     //Input Choice
     cin>>choice;
+    cin.ignore();
     cout<<endl;
             
     switch(choice){
@@ -52,7 +55,6 @@ int main(int argc, char** argv){
             for(int i=0;i<size;i++){
                 cout<<"Customer : "<<i+1<<endl;
                 cout<<"Name : ";
-                cin.ignore();
                 getline(cin,a[i].name);
                 cout<<"Address : ";
                 getline(cin,a[i].addrsNme);
@@ -68,7 +70,6 @@ int main(int argc, char** argv){
                 cin>>a[i].accntBal;
                 cout<<"Date of Last Payment MMDDYR: ";
                 cin>>a[i].lPayDte;
-                cout<<endl;
             }
             
             break;
@@ -98,6 +99,46 @@ int main(int argc, char** argv){
         //Fixing Contents of Array Structure
         case '3':{
             cout<<"This Section will Let you Fix Any Customer Information."<<endl;
+            cout<<"In Order to Fix Any Error you must fill out whole information again."<<endl<<endl;
+            cout<<"Which Customer would you like to Fix?"<<endl;
+            cin>>fix;
+            
+            do{
+                cout<<"Customer : "<<fix<<endl;
+                cout<<"Name : ";
+                cin.ignore();
+                getline(cin,a[fix-1].name);
+                cout<<"Address : ";
+                getline(cin,a[fix-1].addrsNme);
+                cout<<"City : ";
+                getline(cin,a[fix-1].city);
+                cout<<"State : ";
+                getline(cin,a[fix-1].state);
+                cout<<"Zip Code : ";
+                cin>>a[fix-1].areaCde;
+                cout<<"Telephone Number (XXX)XXX-XXXX (Enter given number alone) : ";
+                cin>>a[fix-1].phneNum;
+                cout<<"Account Balance : ";
+                cin>>a[fix-1].accntBal;
+                cout<<"Date of Last Payment MMDDYR: ";
+                cin>>a[fix-1].lPayDte;
+                cout<<endl;
+                
+                cout<<"Is the Information Correct?"<<endl;
+                cout<<"Customer : "<<fix<<endl;
+                cout<<"Name : "<<a[fix-1].name<<endl;
+                cout<<"Address : "<<a[fix-1].addrsNme<<endl;
+                cout<<"City : "<<a[fix-1].city<<endl;
+                cout<<"State : "<<a[fix-1].state<<endl;
+                cout<<"Zip Code : "<<a[fix-1].areaCde<<endl;
+                cout<<"Telephone Number : "<<a[fix-1].phneNum<<endl;
+                cout<<"Account Balance : "<<a[fix-1].accntBal<<endl;
+                cout<<"Date of Last Payment : "<<a[fix-1].lPayDte<<endl;
+     
+                cout<<endl<<"Type Y or y for yes if not it will repeat again."<<endl;
+                cin>>ans;
+                
+            }while(ans=='Y'&&ans=='y');
             
             break;
         }
