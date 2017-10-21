@@ -6,12 +6,12 @@
  */
 
 //System Libraries
-#include <iostream>
-#include "prsnlInfo.h" //Input - Output Library
+#include <iostream> //Input - Output Library
 
 using namespace std; //Name-space under which system libraries exist
 
 //User Libraries
+#include "prsnlInfo.h" 
 
 //Global Constants
 

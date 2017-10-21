@@ -1,0 +1,42 @@
+/* 
+ * File:   main.cpp
+ * Author: Andrew Pena
+ * Created on October 16, 2017, 8:00 PM
+ * Purpose: Personal Information Classes
+ */
+
+//System Libraries
+//Input - Output Library
+
+//Name-space under which system libraries exist
+
+//User Libraries
+
+//Global Constants
+
+//Function Prototype
+
+// Execution begins here!
+
+    //Declare Variables
+    //Number of People on List
+    //Information Class
+
+    //Output the transformed data
+    //For Loop For List
+	//Display for Person
+	//List Info Input for Name
+        //List Info Input for Address
+	//List Info Input for Age
+	//Ignore For Getline
+        //List Info Input for Phone Number
+        //Space
+    
+    //Personal List Format    
+    //For Loop For List
+	//List Info Display for Name
+        //List Info Display for Address
+	//List Info Display for Age
+        //List Info Display for Phone Number
+
+    //Exit stage right!
