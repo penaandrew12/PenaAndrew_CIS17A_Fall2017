@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Andrew Pena
  * Created on November 12th, 2017, 12:00 PM
- * Purpose:  
+ * Purpose: Numbers Class 
  */
 
 //System Libraries
@@ -11,23 +11,20 @@
 using namespace std; //Name-space under which system libraries exist
 
 //User Libraries
+#include "numbers.h"
 
 //Global Constants
 
 //Function Prototype
 
 // Execution begins here!
-int main(int argc, char** argv) {
-    //Declare Variables
-
-    //Initialize variables
-
-    //Input data
-
-    //Map Inputs to Outputs or process the data
+int main(int argc, char** argv) { 
+    //Create Object
+    Numbers n;
 
     //Output the transformed data
-
+    n.print();
+    
     //Exit stage right!
     return 0;
 }

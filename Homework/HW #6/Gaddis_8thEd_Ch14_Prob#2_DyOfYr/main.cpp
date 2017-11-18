@@ -1,16 +1,16 @@
 /* 
  * File:   main.cpp
  * Author: Andrew Pena
- * Created on November 12th, 2017, 12:00 PM
- * Purpose:  
+ * Created on November 15th, 2017, 11:00 AM
+ * Purpose: Day of the Year Class
  */
 
 //System Libraries
 #include <iostream> //Input - Output Library
-
 using namespace std; //Name-space under which system libraries exist
 
 //User Libraries
+#include "dyofyr.h"
 
 //Global Constants
 
@@ -19,15 +19,12 @@ using namespace std; //Name-space under which system libraries exist
 // Execution begins here!
 int main(int argc, char** argv) {
     //Declare Variables
-
-    //Initialize variables
-
-    //Input data
-
-    //Map Inputs to Outputs or process the data
+    DayOfYr d;
 
     //Output the transformed data
-
+    d.getDate();
+    d.print();
+    
     //Exit stage right!
     return 0;
 }

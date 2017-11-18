@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Andrew Pena
  * Created on November 12th, 2017, 12:00 PM
- * Purpose:  
+ * Purpose: Essay Class From Chapter
  */
 
 //System Libraries
@@ -11,6 +11,7 @@
 using namespace std; //Name-space under which system libraries exist
 
 //User Libraries
+#include "grdedActvty.h"
 
 //Global Constants
 
@@ -19,15 +20,11 @@ using namespace std; //Name-space under which system libraries exist
 // Execution begins here!
 int main(int argc, char** argv) {
     //Declare Variables
-
-    //Initialize variables
-
-    //Input data
-
-    //Map Inputs to Outputs or process the data
+    GrdedActvty g;
 
     //Output the transformed data
-
+    g.entrScres();
+    
     //Exit stage right!
     return 0;
 }
