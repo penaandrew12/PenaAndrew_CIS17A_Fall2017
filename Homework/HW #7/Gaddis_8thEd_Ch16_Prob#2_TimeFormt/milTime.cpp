@@ -16,21 +16,30 @@ MilTime::MilTime(){
 }
 
 void MilTime::setMilTime(){
-    do{
+    try{
     cout<<"Enter Military Hour and Minute Now(2359): ";
     cin>>milHrsMin;
-    if(milHrsMin<0||milHrsMin>2359){
-            cout<<"Military Hour and Minute Must be in between 0 and 2359"<<endl;
+        if(milHrsMin<0||milHrsMin>2359){
+            throw 99;
         }
-    }while(milHrsMin<0||milHrsMin>2359); 
-    
-    do{
+    }catch(int x){
+        cout<<"Error Code Number: "<<x<<endl;
+        cout<<"Military Time Must be between 0 and 2359."<<endl;
+        return;
+    }
+   
+        
+    try{
     cout<<"Enter Military Seconds Now(59): ";
     cin>>milSeconds;
         if(milSeconds<0||milSeconds>59){
-            cout<<"Military Seconds Must be in between 0 and 59"<<endl;
+            throw 100;
         }
-    }while(milSeconds<0||milSeconds>59);
+    }catch(int x){
+        cout<<"Error Code Number: "<<x<<endl;
+        cout<<"Military Time Seconds Must be between 0 and 59."<<endl;
+        return;
+    }
 }
 
 void MilTime::getMilHrsMin(){
