@@ -15,19 +15,21 @@ using namespace std; //Name-space under which system libraries exist
 
 //Function Prototype
 template <class T>
-void ttl(T);
+void total(T,T,T);
 
 // Execution begins here!
 int main(int argc, char** argv) {
     //Declare Variables
     int amnt=0;
+    float num=0;
+    float ttl=0;
     
     //Input data
     cout<<"Please Enter the Amount of Number User wishes to Input."<<endl;
     cin>>amnt;
     
     //Map Inputs to Outputs or process the data
-    ttl(amnt);
+    total(amnt,num,ttl);
     
     //Output the transformed data
 
@@ -36,9 +38,9 @@ int main(int argc, char** argv) {
 }
 
 template <class T>
-void ttl(T amnt){
-    int num=0;
-    float ttl=0;
+void total(T amnt,T num,T ttl){
+    num=0;
+    ttl=0;
     cout<<endl<<"Enter Numbers Now: "<<endl;
     for(int i=0;i<amnt;i++){
         cin>>num;
