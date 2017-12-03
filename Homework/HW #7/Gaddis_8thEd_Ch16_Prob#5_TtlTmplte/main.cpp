@@ -15,14 +15,14 @@ using namespace std; //Name-space under which system libraries exist
 
 //Function Prototype
 template <class T>
-void total(T,T,T);
+void total(T,T,T);  //Total Function
 
 // Execution begins here!
 int main(int argc, char** argv) {
     //Declare Variables
-    int amnt=0;
-    float num=0;
-    float ttl=0;
+    int amnt=0; //Amount of numbers
+    int num=0;  //Number from user inputed
+    int ttl=0;  //Total of numbers
     
     //Input data
     cout<<"Please Enter the Amount of Number User wishes to Input."<<endl;
@@ -30,8 +30,6 @@ int main(int argc, char** argv) {
     
     //Map Inputs to Outputs or process the data
     total(amnt,num,ttl);
-    
-    //Output the transformed data
 
     //Exit stage right!
     return 0;
