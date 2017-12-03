@@ -15,14 +15,13 @@ using namespace std; //Name-space under which system libraries exist
 //Global Constants
 
 //Function Prototype
-void markSrt(int *,int);    //Sorting Function
-int avrgeScre(int *,int);   //Average Function
 
 // Execution begins here!
 int main(int argc, char** argv) {
     //Declare Variables
-    vector<int> v;
+    vector<float> v;
     int size=0;
+    float input=0;
     
     //Input data
     do{
@@ -35,19 +34,29 @@ int main(int argc, char** argv) {
     cout<<endl;
     
     //Fill Array
+    cout<<"To Fill Array Enter any Test Scores."<<endl;
+    for(int i=0;i<size;i++){
+        cin>>input;
+        v.push_back(input);
+    }
+    cout<<endl;
+    
     for(int i=0;i<size;i++){
         cout<<"Test Score "<<i+1<<": ";
-        v.push_back(i);
+        cout<<v[i]<<endl;
     }
     cout<<endl;
     
     //Average of Test Scores
-    float sum=0;
-    for(int i=0;i<v.size();i++){
-    sum=sum+v[i];
-    }
+    float sum=0,
+          average=0;
     
-    cout<<endl<<"Average Test Score of all "<<sum<<" Tests is "<<sum<<endl;
+    for(int i=0;i<size;i++){
+        sum+=v[i];
+    }
+    average=sum/size;
+    
+    cout<<endl<<"Average Test Score of all "<<size<<" Tests is "<<average<<endl;
     
     //Exit stage right!
     return 0;
