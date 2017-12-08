@@ -1,0 +1,37 @@
+The Game is to Try to get over 300 points to Win.#
+Player will roll 5 dice.#
+After the Roll the player will get to chooce which dice He/She wants to keep.#
+Then after the player choices the dice He/She will roll again.#
+The Process will repeat until the third roll.#
+Then the Scores are added and user choices which of the score He/She wishs to keep.#
+The game cotinues this process until the scorecard is full.#
+If the player has 0 for all options then user must choose one regardlessand fill it with zero.#
+Once a user inputs a score in a certain slot the user can no longer use that section again.#
+#
+Dice Options Information#
+-------------------------------------------------------------#
+Player			//One Person Plays at a Time#
+-------------------------------------------------------------#
+Ones			//Total of all Ones#
+Two 			//Total of all Twos#
+Threes			//Total of all Threes#
+Fours 			//Total of all Fours#
+Fives			//Total of all Fives#
+Sixes			//Total of all Sixes#
+-------------------------------------------------------------#
+Sum			//Total of all #'s Above#
+Bouns			//Any Bounses Rewarded#
+-------------------------------------------------------------#
+Three of a Kind		//Three of Same Dice#
+Four of a Kind		//Four of Same#
+Full House		//One Pair and Three of Same Dice#
+Small Straight		//Four Dice in Sequence#
+Large Straight		//Five Dice in Sequence#
+Chance			//Any Combo with the Sum of all Dice#
+Yahtzee			//All Five Dice the Same#
+-------------------------------------------------------------#
+Total			//Total Amount of All Scores#
+-------------------------------------------------------------#
+When a Yahtzee is rolled an additional 5 points will be rewarded.#
+If Yahtzee is rolled more than once, Every Yahtzee rolled after the first gets a bouns 50.#
+If the player gets 63 in the section above sum an additional 35 points will be rwarded.#

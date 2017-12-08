@@ -1,0 +1,21 @@
+Player
+-------------------------------------
+Ones
+Two 
+Threes
+Fours 
+Fives
+Sixes
+-------------------------------------
+Sum
+Bouns
+-------------------------------------
+Three of a Kind
+Four of a Kind
+Full House
+Small Straight
+Large Straight
+Chance
+Yahtzee
+-------------------------------------
+Total
