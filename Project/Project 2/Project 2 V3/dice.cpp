@@ -8,6 +8,7 @@
 #include <iostream> //Input Output library
 #include <ctime> //Time to set the Seed
 #include <cstdlib> //Random numbers
+#include <algorithm> //STL Library
 #include "dice.h"
 using namespace std;
 
@@ -611,5 +612,14 @@ void Scores::rollScres(){
     if(one==5||two==5||three==5||four==5||five==5||six==5){
         cout<<"Yathzee: 50"<<endl;
     }
-
+    
+    cout<<endl<<"Sorted Dice!"<<endl;
+    cout<<sizeof(array)<<endl;
+    cout<<sizeof(array[0])<<endl;
+    size_t length=(sizeof(array)/sizeof(array[0]))+1; 
+    sort(array,array+length);
+    for(size_t i=0;i<length;++i){
+        cout<<array[i]<<' ';
+    }
+    cout<<endl;
 }
